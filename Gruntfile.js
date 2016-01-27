@@ -84,7 +84,7 @@ module.exports = function(grunt) {
       html: {
         expand: true,
         // откуда брать исходные файлы
-        cwd: 'src/'
+        cwd: 'src/',
         // какие файлы обрабатывать
         src: '*.html',
         // куда писать результат обработки
