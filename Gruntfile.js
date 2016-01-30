@@ -92,6 +92,14 @@ module.exports = function(grunt) {
       }
     },
 
+    // публикация на GitHub Pages (оригинал репозитория: http://nicothin.github.io/epic_fast_start/)
+    'gh-pages': {
+      options: {
+        base: 'build'
+      },
+      src: '**/*'
+    },
+
     // слежение за файлами
     watch: {
       // перезагрузка? да, детка!
@@ -182,6 +190,14 @@ module.exports = function(grunt) {
   // только обработка картинок
   grunt.registerTask('img', [
     'copy:img',
+  ]);
+
+  // сборка
+  grunt.registerTask('build', [
+    'style',
+    'img',
+    'includereplace:html',
+    'gh-pages',
   ]);
 
 };

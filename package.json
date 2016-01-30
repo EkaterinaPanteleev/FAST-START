@@ -11,6 +11,7 @@
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-gh-pages": "^1.0.0",
     "grunt-include-replace": "^3.2.0",
     "grunt-postcss": "^0.7.1",
     "load-grunt-tasks": "^3.3.0"
