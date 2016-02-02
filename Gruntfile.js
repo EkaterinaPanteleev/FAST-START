@@ -77,6 +77,16 @@ module.exports = function(grunt) {
         // куда
         dest: 'build/img/',
       },
+
+      js: {
+        expand: true,
+        // откуда
+        cwd: 'src/js/',
+        // какие файлы
+        src: ['*.js'],
+        // куда
+        dest: 'build/js/',
+      },
     },
 
     // обрабатываем разметку (инклуды)
@@ -167,6 +177,7 @@ module.exports = function(grunt) {
     'style',
     'img',
     'includereplace:html',
+    'copy:js',
     'browserSync',
     'watch'
   ]);
