@@ -6,7 +6,7 @@
 
 `build` - собранный проект.
 
-[Как работать с консолью в Windows](http://nicothin.ru/page/console-windows).
+[Как работать с консолью в Windows](http://nicothin.pro/page/console-windows).
 
 
 
